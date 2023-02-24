@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+    --fs: 1rem;
+    --text400: 400;
+    --text700: 700;
+    --hover: #da561d;
+    --visited: #26C9FF;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Lightgray);
+    display: grid;
+    place-items: center;
+    font-size: var(--fs);
+}
+
+.container{
+    background-color: var(--White);
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
+/* .container .img{
+    width: 100%;
+    height: 350px;
+    background: black;
+    background-image: url(images/image-qr-code.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+} */
+
+.container img{
+    border-radius: 1em;
+    width: 100%;
+    /* height: auto; */
+}
+.container h2{
+    color: var(--Darkblue);
+
+}
+
+.container p{
+    color: var(--Grayishblue);
+    padding: 0 1rem;
+}
+.attribution{
+    text-align: center;
+}
+@media (max-height:600px){
+    .container img{
+        height:340px;
+        width: 100%;
+    }
+    
+}
+@media (min-width:375px){
+    .container{
+        width: 80%;
+    }
+}
+@media (min-width:425px){
+    .container{
+        width: 70%;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width:40%; 
+    }
+    
+}
+@media (min-width:1024px){
+    .container{
+        width:30%; 
+    }
+    
+}
+@media (min-width:1440px){
+    .container{
+        width:20%; 
+    }
+    
+}
+@media (min-width:1920px){
+    .container{
+        width:15%; 
+    }
+    
+}
+@media (min-width:2560px){
+    .container{
+        width:12%; 
+    }
+    
+}
+
+a:visited{
+    color: var(--visited);
+}
+a:hover{
+    color: var(--hover);
+    transition: all 0.6s ease-out;
+}
